@@ -1,0 +1,19 @@
+{
+  "name": "xlerr/yii2-widget-jsoneditor",
+  "type": "library",
+  "authors": [
+    {
+      "name": "xlerr",
+      "email": "496366543@qq.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "~2.0",
+    "bower-asset/jsoneditor": "~5.26"
+  },
+  "autoload": {
+    "psr-4": {
+      "xlerr\\jsoneditor\\": "./src"
+    }
+  }
+}
