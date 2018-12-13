@@ -54,8 +54,10 @@ var json$idHash = $value;
 var jsoneditor$textIdHash = new JSONEditor(document.getElementById('$textId'), {
     mode: 'code',
     onChangeText: function (jsonString) {
-        jsoneditor$treeIdHash.setText(jsonString);
-        jsoneditor$idHash.value = jsonString.replace(/^\"|\"$/g, '');
+        try {
+            jsoneditor$treeIdHash.setText(jsonString);
+            jsoneditor$idHash.value = jsoneditor$treeIdHash.getText().replace(/^\"|\"$/g, '');
+        } catch (e) {}
     }
 }, json$idHash);
 var jsoneditor$treeIdHash = new JSONEditor(document.getElementById('$treeId'), {
