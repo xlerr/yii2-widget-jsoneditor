@@ -63,6 +63,8 @@ var jsoneditor$textIdHash = new JSONEditor(document.getElementById('$textId'), {
 var jsoneditor$treeIdHash = new JSONEditor(document.getElementById('$treeId'), {
     mode: 'tree',
     search: false,
+    enableSort: false,
+    enableTransform: false,
     onChangeJSON: function (json) {
         jsoneditor$textIdHash.set(json);
     },
